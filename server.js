@@ -6,7 +6,7 @@ let app = express()
 
 let redirect_uri = 
   process.env.REDIRECT_URI || 
-  'http://localhost:8888/callback'
+  'https://cryptic-caverns-89709.herokuapp.com/'
 
 app.get('/login', function(req, res) {
   res.redirect('https://accounts.spotify.com/authorize?' +
